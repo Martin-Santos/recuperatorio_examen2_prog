@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*HEADER*/
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #3A98B9;
+    z-index: 2;
+}
+
+#cabeza{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cabeza ul{
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    
+    
+}
+#cabeza ul a{
+    text-decoration: none;
+    color: black;
+}
+.title{
+    align-items: center;
+    display: flex;
+    
+}
+.title img{
+    width: 50px;
+    border-radius: 25px;
+}
+.title h1{
+    padding-left: 8px;
+}
+.searchBar{
+    width: 100px;
+    border-radius: 5px;
+}
+
+
+
+/*MAIN*/
+
+.container{
+    
+    margin-top: 100px;
+}
+.container .row .col{
+    
+} 
+.container .row .col img{
+    width: 60%;
+}
+
+
+
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    
+    position: static;
+    bottom: 0;
+}
+h1 .titleFooter{
+    grid-area: titulo;
+    
+    
+}
+.footerDiv .sobreNosotros h2{
+    text-decoration: underline;
+    padding-left: 10px;
+}
+.footerDiv .sobreNosotros h5{
+    padding-left: 10px;
+}
+section{
+    grid-area: Contactenos;
+}
+nav{
+    grid-area: Social;
+}
+#pie .footerDiv{
+    background-color: #3A98B9;
+    display: grid;
+    grid-template-areas: 
+    "titulo Contactenos Soporte";
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 50px;
+    
+}
+.Contactenos ul{
+    list-style-type: none;
+    text-align: center;
+    background-color: #3A98B9;
+}
+.social ul{
+    list-style-type: none;
+    text-align: center;
+    background-color: #3A98B9;
+}
+.footerDiv .Contactenos{
+    text-align: center;
+}
+.footerDiv .Contactenos section h2{
+    text-decoration: underline;
+}
+.footerDiv .social{
+    text-align: center;
+}
+.footerDiv .social nav h2{
+    text-decoration: underline;
+}
+.footerDiv .sobreNosotros h5{
+    background-color: #3A98B9;
+}
+
+@media screen and (max-width: 1070px) {
+    #cabeza ul{
+        gap: 10px;
+    }
+    .searchBar{
+        visibility: hidden;
+    }
+    
+    #cabeza .title img{
+        visibility: hidden;
+    }
+    
+   
+}
